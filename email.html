@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Submit a form via AJAX</title>
+	<script type="text/javascript" src="scripts/email.js"></script>
+      <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a4/jquery.mobile-1.0a4.min.css" />
+      <script src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
+    
+
+	<script src="http://code.jquery.com/mobile/1.0a4/jquery.mobile-1.0a4.min.js"></script>
+	
+	<style>
+	.ui-page {
+    background:black;
+}
+
+</style>
+</head>
+<body>
+<script type="text/javascript" src="scripts/email.js"></script>
+  
+    <!-- call ajax page -->
+    <div data-role="page" data-theme="b" id="callAjaxPage">
+	<br><br><br><br><br><br><br>
+        <div data-role="content">
+            <form id="callAjaxForm">
+                <div data-role="fieldcontain">
+                    <label for="firstName">First Name</label>
+                    <input type="text" name="firstName" id="firstName" value=""  />
+ 
+                    <label for="lastName">Last Name</label>
+                    <input type="text" name="lastName" id="lastName" value=""  />
+					
+					 <label for="date">Date </label>
+                    <input type="date" name="date" id="date" value=""  />
+					
+					<label for="time">Time</label>
+                    <input type="time" name="time" id="time" value=""  />
+					
+	<label for="shipping" class="select" data-theme="e" >Barber:</label>
+						<select name="shipping" id="shipping" data-theme="e">
+							<option value="SL">Shawn Lewis</option>
+							<option value="CW">Carl Walker</option>
+							<option value="JJ">James Jordan</option>
+							<option value="AW">Andrian Williams</option>
+						</select>
+                    <h3 id="notification"></h3>
+                    <button data-theme="b" id="submit" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+  <div data-role="footer" data-theme="e" data-position="fixed">
+	<h1></h1>
+</div>
+    </div>
+</body>
+</html>
